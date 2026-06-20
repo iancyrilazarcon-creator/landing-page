@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login - Japan Quest</title>
+    <link rel="stylesheet" href="landing style.css">
+</head>
+
+<body>
+
+<div class="loginBox">
+
+    <div>JAPAN QUEST</div>
+
+    <h2 id="formTitle">
+    Welcome Back Adventurer
+    </h2>
+
+    <input
+    type="email"
+    id="email"
+    placeholder="Email">
+
+    <br><br>
+
+    <input
+    type="password"
+    id="password"
+    placeholder="Password">
+
+    <div id="confirmBox" style="display:none;">
+
+    <br>
+
+    <input
+    type="password"
+    id="confirmPassword"
+    placeholder="Confirm Password">
+
+    </div>
+
+    <br><br>
+
+    <button onclick="createAccount()">
+    CREATE ACCOUNT
+    </button>
+
+    <br><br>
+
+    <p>
+
+    <span id="switchText">
+
+    Don't have an account?
+
+    </span>
+
+    <a href="#"
+
+    onclick="toggleForm()">
+
+    CREATE ACCOUNT
+
+    </a>
+
+    </p>
+</div>
+
+<script type="module" src="login.js"></script>
+
+</body>
+
+</html>

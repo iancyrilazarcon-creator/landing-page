@@ -1,0 +1,446 @@
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.accountBtn{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hero{
+    min-height: 75vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 90px;
+    justify-content: center;
+    margin-top: -120px;
+    text-shadow: 0px 0px 25px white;
+}
+
+.button{
+    padding: 15px 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+body{
+    text-align: center;
+    margin: 0;
+    font-family: Arial;
+}
+
+body{
+    background-color: #111827;
+    color: white;
+}
+
+body{
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+
+    background-image: url("images/Village\ Landing\ Page.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.hero{
+    margin-top: 100px;
+}
+
+h1{
+    font-size: 100px;
+    text-shadow: 4px 4px 10px black;
+}
+
+.hero p{
+    font-size: 22px;
+    text-shadow: 2px 2px 8px black;
+}
+
+button{
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: relative;
+
+    position: sticky;
+
+top: 0;
+
+z-index: 999;
+
+background:
+rgba(17,24,39,0.95);
+
+backdrop-filter:
+blur(10px);
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    background: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+}
+
+.navLinks a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navLinks button{
+    background: black;
+    color: white;
+    border: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.navLinks a:hover{
+
+color:#4da6ff;
+
+transition:.3s;
+
+}
+
+.navLinks button:hover{
+
+background:#4da6ff;
+
+color:white;
+
+}
+
+.playBtn{
+    padding: 18px 50px;
+    font-size: 22px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.playBtn:hover{
+   transform:
+translateY(-10px)
+scale(1.03);
+}
+
+.heroButtons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.badge{
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    top: -100px;
+}
+
+.preview img{
+    width: 700px;
+    max-width: 90%;
+    border-radius: 20px;
+}
+
+button{
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: translateY(-3px);
+}
+
+.playBtn:hover{
+    box-shadow: 0 0 20px
+rgba(255,255,255,0.7);
+}
+
+.featureCard{
+    width: 250px;
+    padding: 40px;
+    font-size: 24px;
+
+    transition: 24px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px  solid rgba(255,255,255,0.015);
+    border-radius: 20px;
+}
+
+.featureCard:hover{
+
+    transform:
+    translateY(-10px);
+    scale:(1.03);
+
+    box-shadow:
+0 0 25px rgba(255,255,255,0.3);
+
+}
+
+.featureContainer{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    max-width: 1400px;
+    margin: auto;
+}
+
+.emoji{
+
+font-size:100px;
+height:120px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.features h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.featureCard:nth-child(1){
+    border-top: 4px solid #ff4d4d;
+}
+
+.featureCard:nth-child(2){
+    border-top: 4px solid #4da6ff;
+}
+
+.featureCard:nth-child(3){
+    border-top: 4px solid #ffd24d;
+}
+
+.featureCard h3{
+
+min-height:50px;
+
+}
+
+.showcase{
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.showcase h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.showcase img{
+    width: 700px;
+    max-width: 90%;
+
+    border-radius: 20px;
+
+    box-shadow:
+0px 0px 25px rgba(0,0,0,0.5);
+}
+
+.features{
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+.loginBox{
+
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 40px;
+    background: rgba(0,0,0,.6);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+
+}
+
+.loginBox input{
+
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+
+.loginBox button{
+
+    width: 85%;
+    margin-top: 10px;
+
+}
+
+.aboutGame{
+
+    max-width: 900PX;
+    margin: auto;
+    padding: 100PX 20PX;
+    text-align: center;
+
+}
+
+.aboutGame H2{
+
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+
+.aboutGame p{
+
+    font-size: 24px;
+    line-height: 1.8;
+
+}
+
+.statsSection{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+padding:50px;
+
+}
+
+section{
+
+padding:120px 20px;
+
+}
+
+.statCard{
+
+width:220px;
+
+padding:30px;
+
+background:
+rgba(255,255,255,0.08);
+
+border-radius:20px;
+
+backdrop-filter:
+blur(10px);
+
+}
+
+.statCard h2{
+
+font-size:50px;
+
+margin:0;
+
+}
+
+.roadmap{
+
+    padding: 100px 20px;
+
+}
+
+.devlog{
+
+padding:100px 20px;
+
+}
+
+.classes{
+
+padding:100px 20px;
+
+}
+
+.classes h2{
+
+font-size:50px;
+
+margin-bottom:50px;
+
+}
+
+footer{
+
+margin-top:100px;
+
+padding:40px;
+
+background:rgba(0,0,0,.5);
+
+}
