@@ -7,6 +7,8 @@ import {
     sendPasswordResetEmail
 } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js";
 
+const auth = getAuth(app);
+
 window.login = function(){
 
     const email =
@@ -39,15 +41,36 @@ window.login = function(){
 
     })
 
-    .catch((error) => {
+    .catch((error)=>{
 
-        button.innerHTML="BEGIN JOURNEY";
+    button.innerHTML="BEGIN JOURNEY";
+    button.disabled=false;
 
-        button.disabled=false;
+    if(error.code==="auth/wrong-password"){
+
+        alert("Incorrect password.");
+
+    }
+
+    else if(error.code==="auth/user-not-found"){
+
+        alert("No account found.");
+
+    }
+
+    else if(error.code==="auth/invalid-email"){
+
+        alert("Invalid email.");
+
+    }
+
+    else{
 
         alert(error.message);
 
-    });
+    }
+
+});
 
 }
 
@@ -73,13 +96,13 @@ window.createAccount = function(){
 
     .catch((error) => {
 
-       if(error.code==="auth/wrong-password"){
+    if(error.code==="auth/wrong-password"){
 
         alert("Incorrect password.");
 
     }
 
-        else if(error.code==="auth/user-not-found"){
+    else if(error.code==="auth/user-not-found"){
 
         alert("No account found.");
 
@@ -87,19 +110,19 @@ window.createAccount = function(){
 
     else if(error.code==="auth/invalid-email"){
 
-    alert("Invalid email.");
+        alert("Invalid email.");
 
     }
 
     else{
 
-    alert(error.message);
+        alert(error.message);
 
     }
 
-    });
+});   // closes catch
 
-}
+};     // closes createAccount
 
 window.forgotPassword = function(){
 
