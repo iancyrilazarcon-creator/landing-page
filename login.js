@@ -3,9 +3,9 @@ import { app } from "./firebase.js";
 import {
     getAuth,
     signInWithEmailAndPassword,
-    createUserWithEmailAndPassword
+    createUserWithEmailAndPassword,
+    sendPasswordResetEmail
 } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js";
-const auth = getAuth(app);
 
 window.login = function(){
 
@@ -58,6 +58,31 @@ window.createAccount = function(){
     })
 
     .catch((error) => {
+
+        alert(error.message);
+
+    });
+
+}
+
+window.forgotPassword = function(){
+
+    const email =
+    prompt("Enter your email");
+
+    if(!email) return;
+
+    sendPasswordResetEmail(auth,email)
+
+    .then(()=>{
+
+        alert(
+        "Password reset email sent!"
+        );
+
+    })
+
+    .catch((error)=>{
 
         alert(error.message);
 
