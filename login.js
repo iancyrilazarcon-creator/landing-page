@@ -15,6 +15,14 @@ window.login = function(){
     const password =
     document.getElementById("password").value;
 
+    const button=
+
+    document.querySelector(".mainBtn");
+
+    button.innerHTML="Logging in...";
+
+    button.disabled=true;
+
     signInWithEmailAndPassword(
         auth,
         email,
@@ -23,13 +31,19 @@ window.login = function(){
 
     .then(() => {
 
-        alert("Welcome Back!");
+    alert("Welcome Back!");
+
+        button.innerHTML="Success!";
 
         location.href = "characterSlots.html";
 
     })
 
     .catch((error) => {
+
+        button.innerHTML="BEGIN JOURNEY";
+
+        button.disabled=false;
 
         alert(error.message);
 
@@ -59,7 +73,29 @@ window.createAccount = function(){
 
     .catch((error) => {
 
-        alert(error.message);
+       if(error.code==="auth/wrong-password"){
+
+        alert("Incorrect password.");
+
+    }
+
+        else if(error.code==="auth/user-not-found"){
+
+        alert("No account found.");
+
+    }
+
+    else if(error.code==="auth/invalid-email"){
+
+    alert("Invalid email.");
+
+    }
+
+    else{
+
+    alert(error.message);
+
+    }
 
     });
 
@@ -87,5 +123,25 @@ window.forgotPassword = function(){
         alert(error.message);
 
     });
+
+}
+
+window.togglePassword=function(){
+
+    const password=
+
+    document.getElementById("password");
+
+    if(password.type==="password"){
+
+    password.type="text";
+
+}
+
+else{
+
+    password.type="password";
+
+}
 
 }
