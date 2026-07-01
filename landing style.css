@@ -524,41 +524,25 @@ background:rgba(0,0,0,.5);
 }
 
 .passwordBox{
-
-position:relative;
-
-width:90%;
-
-margin:auto;
-
+    position: relative;
+    width: 90%;
+    margin: auto;
 }
 
 .passwordBox input{
-
-width:100%;
-
-padding:15px;
-
-padding-right:50px;
-
-box-sizing:border-box;
-
+    width: 100%;
+    padding: 15px;
+    padding-right: 55px;
+    box-sizing: border-box;
 }
 
 .eye{
-
-position:absolute;
-
-right:18px;
-
-top:50%;
-
-transform:translateY(-50%);
-
-cursor:pointer;
-
-font-size:22px;
-
-user-select:none;
-
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    z-index: 9999;
 }
